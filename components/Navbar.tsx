@@ -61,7 +61,7 @@ const Navbar = () => {
               className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
             >
               <li>
-                <a href='/profile'>Profile</a>
+                <Link href='/profile'>Profile</Link>
               </li>
               <li>
                 <a>Settings</a>
@@ -80,7 +80,7 @@ const Navbar = () => {
               className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
             >
               <li>
-                <a href={'/login'}>Login</a>
+                <Link href={'/login'}>Login</Link>
               </li>
             </ul>
           )}

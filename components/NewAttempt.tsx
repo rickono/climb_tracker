@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import PocketBase from 'pocketbase';
 import { useRouter } from 'next/router';
 import Page from '@/components/Page';
@@ -125,7 +126,7 @@ const NewAttempt = ({
             <label className='label'>
               <span className='label-text-alt'>
                 Or,{' '}
-                <a
+                <Link
                   href=''
                   className='link link-primary'
                   onClick={(e) => {
@@ -134,7 +135,7 @@ const NewAttempt = ({
                   }}
                 >
                   create a new climb
-                </a>
+                </Link>
                 .
               </span>
             </label>
@@ -152,7 +153,7 @@ const NewAttempt = ({
             />
             <p className='text-xs mt-3'>
               Or,{' '}
-              <a
+              <Link
                 href=''
                 className='link link-primary'
                 onClick={(e) => {
@@ -161,7 +162,7 @@ const NewAttempt = ({
                 }}
               >
                 choose an existing climb
-              </a>
+              </Link>
               .
             </p>
           </div>
