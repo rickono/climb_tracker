@@ -152,7 +152,7 @@ export class ApiClient {
     const climbIds = (
       await Promise.all(
         sets.items.map(async (set) => {
-          const attempts = await this.getAttempts(set.id);
+          const attempts = await this.getAttemptsForSet(set.id);
           return attempts.map((attempt) => attempt.climb);
         })
       )
